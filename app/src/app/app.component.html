@@ -1,2 +1,14 @@
-<ng-particles [id]="id" [options]="particlesOptions" [particlesInit]="particlesInit"
-  (particlesLoaded)="particlesLoaded($event)"></ng-particles>
+<!-- Fixed particle background behind everything -->
+<div class="particles-background">
+  <ng-particles
+    [id]="id"
+    [options]="particlesOptions"
+    [particlesInit]="particlesInit"
+    (particlesLoaded)="particlesLoaded($event)"
+  ></ng-particles>
+</div>
+
+<!-- Foreground scrollable content -->
+<div class="main-content">
+  <router-outlet></router-outlet>
+</div>

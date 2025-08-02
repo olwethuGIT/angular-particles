@@ -71,7 +71,7 @@ export class AppComponent {
           default: OutMode.bounce,
         },
         random: false,
-        speed: 6,
+        speed: 2,
         straight: false,
       },
       number: {
@@ -88,7 +88,7 @@ export class AppComponent {
         type: 'circle',
       },
       size: {
-        value: { min: 1, max: 5 },
+        value: { min: 1, max: 6 },
       },
     },
     detectRetina: true,

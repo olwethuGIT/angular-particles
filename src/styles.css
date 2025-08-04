@@ -1,7 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
   overflow: auto;
+}
+
+.body-section {
+  padding: 2rem;
+  padding-left: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    color: #333;
+  }
+
+  .body-text {
+    margin-right: 2rem;
+
+    p {
+      line-height: 2.2em;
+      font-size: 15px;
+      font-weight: lighter;
+      font-family: "montserrat", sans-serif;
+    }
+  }
+
+  .body-text-items {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+
+    p {
+      line-height: 1em;
+      font-size: 15px;
+      font-family: "montserrat", sans-serif;
+    }
+
+    .paragraph {
+      line-height: 1.3em;
+    }
+  }
+}
+
+.body-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.25rem;
+
+  h2 {
+    font-size: 22px;
+    font-family: "cormorantgaramond-semibold", "cormorantgaramond",
+      "cormorant garamond", serif;
+    font-weight: lighter;
+    margin: 0;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+
+  hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #000;
+    transform: translateY(1px);
+  }
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+
+  .tag {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.85rem;
+    border-radius: 999px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+    transition: background-color 0.3s ease;
+    font-family: "montserrat", sans-serif;
+
+    &:hover {
+      background-color: #9bb1a6;
+      cursor: pointer;
+    }
+  }
 }

@@ -1,0 +1,21 @@
+<div class="body-heading">
+  <h2>{{ title }}</h2>
+  <hr />
+</div>
+<div *ngFor="let workExperience of workExperiences" class="body-text-items">
+  <p>
+    <strong>{{ workExperience.duration }}</strong>
+  </p>
+  <p>
+    <strong>{{ workExperience.position }}</strong>
+  </p>
+  <p>{{ workExperience.company }}</p>
+  <p>
+    <em>{{ workExperience.address }}</em>
+  </p>
+  <div class="skill-tags">
+    <span *ngFor="let skill of workExperience.skills" class="tag">{{
+      skill
+    }}</span>
+  </div>
+</div>

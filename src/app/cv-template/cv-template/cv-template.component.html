@@ -27,10 +27,21 @@
               <a
                 href="https://www.linkedin.com/in/olwethu-onward-mbada-399280154"
                 target="_blank"
-                >LinkedIn</a
               >
-              •
-              <a target="_blank" href="https://github.com/olwethuGIT">Github</a>
+                <img
+                  src="assets/icons/linkedin.svg"
+                  alt="Link icon"
+                  width="40"
+                  height="40"
+                />
+              </a>
+              <a target="_blank" href="https://github.com/olwethuGIT"
+                ><img
+                  src="assets/icons/github.svg"
+                  alt="Link icon"
+                  width="40"
+                  height="40"
+              /></a>
             </div>
             <div class="cv-full-link">
               <a href="#about">See full CV ↓</a>
@@ -79,148 +90,28 @@
 
           <section id="skills">
             <div class="body-section">
-              <div class="body-heading">
-                <h2>Skills & Expertise</h2>
-                <hr />
-              </div>
-              <div class="body-text-items">
-                <p><strong>Software Development</strong></p>
-                <p><strong>Full Stack | Scalable Systems</strong></p>
-                <p class="paragraph">
-                  Proficient in OOP and functional programming using C#,
-                  JavaScript, TypeScript, and Dart. Experienced in designing and
-                  developing RESTful APIs and scalable backend systems with
-                  .NET, NestJS, and Laravel.
-                </p>
-              </div>
-              <div class="body-text-items">
-                <p><strong>Frontend Development</strong></p>
-                <p><strong>Angular, React, Next.js</strong></p>
-                <p class="paragraph">
-                  Over 5 years of experience building responsive, accessible,
-                  and high-performance web interfaces. Passionate about clean
-                  UI/UX, reusable components, and state management in modern JS
-                  frameworks.
-                </p>
-              </div>
-              <div class="body-text-items">
-                <p><strong>Mobile & Cross-Platform Development</strong></p>
-                <p><strong>Flutter, React Native</strong></p>
-                <p class="paragraph">
-                  Skilled in building cross-platform mobile apps for Android and
-                  iOS. Experience in hybrid mobile app development using Flutter
-                  and Expo (React Native), delivering consistent UI and
-                  performance across devices.
-                </p>
-              </div>
+              <app-skills-expertise
+                [skills]="skillsExpertise"
+                [title]="'Skills & Expertise'"
+              ></app-skills-expertise>
             </div>
           </section>
 
           <section id="work-experience">
             <div class="body-section">
-              <div class="body-heading">
-                <h2>Work Experience</h2>
-                <hr />
-              </div>
-              <div class="body-text-items">
-                <p><strong>12/2023 - Present</strong></p>
-                <p><strong>Specialist Product Engineer</strong></p>
-                <p>ABSA Group</p>
-                <p><em>Randburg, Gauteng</em></p>
-                <div class="skill-tags">
-                  <span class="tag">JavaScript</span>
-                  <span class="tag">TypeScript</span>
-                  <span class="tag">Angular</span>
-                  <span class="tag">NestJS</span>
-                  <span class="tag">HTML</span>
-                  <span class="tag">CSS</span>
-                  <span class="tag">Node.js</span>
-                  <span class="tag">MongoDB</span>
-                </div>
-              </div>
-              <br />
-              <div class="body-text-items">
-                <p><strong>06/2023 - 12/2023</strong></p>
-                <p><strong>Specialist Product Engineer - Consultant</strong></p>
-                <p>Reverside</p>
-                <p><em>Sandton, Gauteng</em></p>
-                <div class="skill-tags">
-                  <span class="tag">JavaScript</span>
-                  <span class="tag">TypeScript</span>
-                  <span class="tag">Angular</span>
-                  <span class="tag">NestJS</span>
-                  <span class="tag">HTML</span>
-                  <span class="tag">CSS</span>
-                  <span class="tag">Node.js</span>
-                  <span class="tag">MongoDB</span>
-                </div>
-              </div>
-              <br />
-              <div class="body-text-items">
-                <p><strong>10/2021 - 05/2023</strong></p>
-                <p><strong>Full Stack Software Developer</strong></p>
-                <p>The App Lab</p>
-                <p><em>Bryanston, Gauteng</em></p>
-                <div class="skill-tags">
-                  <span class="tag">JavaScript</span>
-                  <span class="tag">TypeScript</span>
-                  <span class="tag">Angular</span>
-                  <span class="tag">NestJS</span>
-                  <span class="tag">Next.js</span>
-                  <span class="tag">React</span>
-                  <span class="tag">HTML</span>
-                  <span class="tag">CSS</span>
-                  <span class="tag">Node.js</span>
-                  <span class="tag">Drupal</span>
-                  <span class="tag">Python</span>
-                  <span class="tag">Docker</span>
-                </div>
-              </div>
-              <br />
-              <div class="body-text-items">
-                <p><strong>02/2020 - 09/2021</strong></p>
-                <p><strong>Software Developer</strong></p>
-                <p>S4 Integration</p>
-                <p><em>Fairview, Gqeberha</em></p>
-                <div class="skill-tags">
-                  <span class="tag">PHP</span>
-                  <span class="tag">TypeScript</span>
-                  <span class="tag">Angular</span>
-                  <span class="tag">Flutter</span>
-                  <span class="tag">HTML</span>
-                  <span class="tag">CSS</span>
-                  <span class="tag">Node.js</span>
-                </div>
-              </div>
+              <app-work-experience
+                [workExperiences]="workExperiences"
+                [title]="'Work Experience'"
+              ></app-work-experience>
             </div>
           </section>
 
           <section id="education">
             <div class="body-section">
-              <div class="body-heading">
-                <h2>Education</h2>
-                <hr />
-              </div>
-              <div class="body-text-items">
-                <p><strong>2018 - 2018</strong></p>
-                <p><strong>Nelson Mandela University</strong></p>
-                <p>Bachelor's Degree in Information Technology</p>
-                <p>Software Development</p>
-              </div>
-              <br />
-              <div class="body-text-items">
-                <p><strong>2015 - 2017</strong></p>
-                <p><strong>Nelson Mandela University</strong></p>
-                <p>Diploma in Information Technology</p>
-                <p>Software Development</p>
-              </div>
-              <br />
-              <div class="body-text-items">
-                <p><strong>2014 - 2014</strong></p>
-                <p><strong>Nelson Mandela University</strong></p>
-                <p>Higher Certificate in Information Technology</p>
-                <p>User Support Services</p>
-              </div>
+              <app-education
+                [educationList]="educationList"
+                [title]="'Education'"
+              ></app-education>
             </div>
           </section>
         </div>
@@ -234,6 +125,10 @@
 
   <div class="right-column">
     <app-button></app-button>
-    <img src="assets/images/Olwethu.jpg" alt="Profile photo" class="profile-image" />
+    <img
+      src="assets/images/Olwethu.jpg"
+      alt="Profile photo"
+      class="profile-image"
+    />
   </div>
 </div>

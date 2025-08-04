@@ -1,0 +1,15 @@
+<div class="body-heading">
+  <h2>{{ title }}</h2>
+  <hr />
+</div>
+<div *ngFor="let education of educationList" class="body-text-items">
+  <p>
+    <strong>{{ education.duration }}</strong>
+  </p>
+  <p>
+    <strong>{{ education.institution }}</strong>
+  </p>
+  <p>{{ education.degree }}</p>
+  <p>{{ education.stream }}</p>
+</div>
+<br />
